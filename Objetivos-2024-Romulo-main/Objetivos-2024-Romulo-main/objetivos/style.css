@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jim+Nightshade&display=swap");
+:root{
+    --cor-de-fundo: #241733;
+    --texto1: #fffdfd;
+    --texto2: #161616;
+    --botao-ativo: #583e70;
+    --botao-inativo: rgba(44, 15, 77, 0.5);
+    --texto-fundo: rgba(6, 7, 95, 0.3);
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--texto1);
+    font-family:"Jim Nightshade",  cursive;
+}
+ 
+.conteudo-principal{
+    display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     max-width:100%;
+     margin:0 auto;
+} 
+.tituloprincipal{
+    text-align:center;
+    width:100%;
+    font-size:100px;
+}
+.botao{
+    font-family:"Roboto Condensed", cursive;
+    background-color: var(--botao-inativo);
+    display: flex;
+    color:var(--texto1);
+    justify-content:center;
+    padding:1 em;
+    font-size: 60px;
+    align-items: center;
+    width:100%
+}
+ .botoes{
+     display:flex;
+ }
+ .botao:first-child{
+     border-radius:40px 0 0 0;
+ }
+ .botao:last-child{
+     border-radius:0 40px 0 0;
+ }
+ .ativo{
+     background: var(--botao-ativo);
+     border-bottom: 4px solid rgb(230, 255, 3);
+ }
